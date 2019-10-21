@@ -1,21 +1,16 @@
 import React from 'react';
 import "./Lobby.css";
-import openSocket from "socket.io-client";
-
-const socket = openSocket("http://localhost:3000");
+import Button from 'react-bootstrap/Button';
 
 const LobbyLayout = (props) => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-sm">
-
+                    <Button onClick={""}>Create Game</Button>
                 </div>
                 <div className="col-sm">
-                    Your In the Lobby...
-                </div>
-                <div className="col-sm">
-
+                    <Button onClick={""}>Join Game</Button>
                 </div>
             </div>
         </div>
