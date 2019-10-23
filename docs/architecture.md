@@ -9,11 +9,11 @@ The major systems that comprise KOT are as folllows:
 - Django channels for asynchronous Websocket communication
 - React frontend for the user interface  
 
-#### To do: Figure 1 should map out the basic systems involved with KOT and how they interact with each other. 
+#### To do: Diagram should map out the basic systems involved with KOT and how they interact with each other. 
 
 ## 2.1 Backend
 ### Vanilla Django 
- Django is built around the simple concept of requests and responses: the browser makes a request, Django calls a view, which returns a response that’s sent back to the browser. 
+ Django is built around the simple concept of requests and responses: the browser makes a request, Django calls a view, which returns a response that’s sent back to the browser.  
 
 ![Vanilla](https://i.imgur.com/1HzpGJe.png_)
 
