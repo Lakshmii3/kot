@@ -18,12 +18,17 @@ The major systems that comprise KOT are as folllows:
 ![Vanilla](https://i.imgur.com/1HzpGJe.png_)
 
 ### Django Channels
+Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols. It’s built on a Python specification called ASGI.(Asynchronous Server Gateway Interface)
+It does this by taking the core of Django and layering a fully asynchronous layer underneath, running Django itself in a synchronous mode but handling connections and sockets asynchronously, and giving you the choice to write in either style.
+
 Django Channels supports WebSockets which is a protocol that provides full-duplex communication — a persistent, open connection between the client and the server, with either able to send data at any time.
 
 Channels also allow for background tasks that run on the same servers as the rest of Django. HTTP requests continue to behave the same as before, but also get routed over channels
 
 Channels are essentially task queues: messages get pushed onto the channel by producers, and then given to one of the consumers listening on that channel. 
-Channels is designed to use Redis as its preferred channel layer, though there is support for other types (and a first-class API for creating custom channel layers). Documentation: 
+Channels is designed to use Redis as its preferred channel layer, though there is support for other types.
+
+**This means we might have to set up a Redis instance for WebSocket communication along with the MySQL for Django's HTTP requests**
 
 ![Django with Channels](https://i.imgur.com/Ds5TcD3.png)
 
