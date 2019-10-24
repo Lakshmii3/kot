@@ -36,7 +36,6 @@ Channels is designed to use Redis as its preferred channel layer, though there i
 #### To do
 
 ## 2.3 Frontend
-#### To do
 
 The websites frontend infrastructure will leverage React and [Flux](https://github.com/facebook/flux "Facebook Flux on GitHub") application architecture. Flux was developed to utilize a unidirectional data flow in React. 
 
