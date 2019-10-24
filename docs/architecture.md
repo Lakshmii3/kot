@@ -7,7 +7,7 @@ The major systems that comprise KOT are as folllows:
 - Django backend for routing and providing a RESTful API
 - MySQL database for storing player and game session data
 - Django channels for asynchronous Websocket communication
-- React frontend for the user interface  
+- React frontend for the user interface leveraging Redux
 
 #### To do: Diagram should map out the basic systems involved with KOT and how they interact with each other. 
 
@@ -37,6 +37,14 @@ Channels is designed to use Redis as its preferred channel layer, though there i
 
 ## 2.3 Frontend
 #### To do
+
+The websites frontend infrastructure will leverage React and [Flux](https://github.com/facebook/flux "Facebook Flux on GitHub") application architecture. Flux was developed to utilize a unidirectional data flow in React. 
+
+The UI team has not yet completely decided which architectural data and state management approach to utilize. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
+
+![Flux](https://github.com/facebook/flux/blob/master/img/flux-diagram-white-background.png)
+
+
 
 
 
