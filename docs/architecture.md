@@ -48,7 +48,7 @@ The websites frontend infrastructure will leverage React and [Flux](https://gith
 
 The UI team has not yet completely decided which architectural data and state management approach to utilize. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
 
-![Flux](/docs/flux-diagram-white-background.png "Flux Architecture (Source: https://github.com/facebook/flux)")
+![Flux](https://github.com/facebook/flux/blob/master/img/flux-diagram-white-background.png "Flux Architecture")
 
 ## 2.4 Sitemap Outline
 
