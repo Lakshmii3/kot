@@ -54,13 +54,15 @@ The UI team has not yet completely decided which architectural data and state ma
 
 ### Game Lobby Page
 
+![Game Lobby](/docs/kot_lobby_basic_mock.jpg "To do: Add Game Lobby Mockup Image")
+
 - Game Lobby with updating list of available games. Creating a game would notify others online so that they may choose to join the game.
 - Player enters the lobby after logging in.
 - Lobby consists of a list of active games and players looking for games.
 
-![Game Lobby](/docs/kot_lobby_basic_mock.jpg "To do: Add Game Lobby Mockup Image")
-
 ### Game Area Page
+
+![Game Area](/docs/kot_gameboard_basic_mock.jpg "Gameboard Wireframe")
 
 Features:
 
@@ -99,8 +101,6 @@ Note: This will probably be the last page to be developed.
 Main landing page for the site. This page provides the user with access to login UI and community building mechanics such as rankings, achievments, etc.
 
 Login will not be developed until the game lobby and gameboard is far enough along for multiplayer matchmaking to make sense.
-
-![Game Area](/docs/kot_gameboard_basic_mock.jpg "Gameboard Wireframe")
 
 ## 4 Installation
 
