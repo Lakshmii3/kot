@@ -41,9 +41,29 @@ The websites frontend infrastructure will leverage React and [Flux](https://gith
 
 The UI team has not yet completely decided which architectural data and state management approach to utilize. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
 
-![Flux](https://github.com/facebook/flux/blob/master/img/flux-diagram-white-background.png)
+![Flux](https://imgur.com/c4S5Vti)
+
+### Game Landing & Login Page
+![Game Lobby Mockup](https://imgur.com/SUuF9L3)
+
+### Game Lobby Page
 
 
+![Game Lobby Mockup](https://imgur.com/SUuF9L3)
 
+### Game Area Page
 
+The game area will include the components highlighted on the Game Area shown below. Component listing indicate development priority.
 
+- Diceboard: The strip of boxes to the right of PlayerDetails changes to show the players current roll. This area will also update to show the other players roles. The player can click those dice they wish to keep or lock. Locked dice will not be rerolled. Dice will outline in red when locked. Dice still avialbe for rolling are outlined in green. 
+- PlayerControls: A series of buttons for performing game mechanics such as including "Roll", "Reroll", "Leave Tokyo City" and "Enter Tokyo City".
+- GameConsole:
+- PlayerDetails: Series of text areas organized in a column describing the players current game standing stats. These include Victory (VPs), Hearts and Energy Points. Counters collected shall also be shown.
+- CardStore:
+- CardDetails:
+- PlayerAbilities: A stacked series of buttons each representing a card purchased or earned by the player. Cards can be activated by clicking. Cards will be disabled or enabled when accessable given the players current turn phase.
+- OpponentStatus:
+- MUDCommandShell: A scrollable text area with textbox for interacting with the game via MUD style text commands. Any Player Ability, Player Control or Player resources (heart, energy, claws, etc.) can be leveraged via text command or by interacting with an associated UI control.
+- ChatShell:
+
+![Game Area Mockup](https://imgur.com/SUuF9L3)
