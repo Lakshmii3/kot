@@ -54,7 +54,7 @@ The UI team has not yet completely decided which state management data flow impl
 
 ### Game Lobby Page
 
-![Game Lobby](/docs/kot_lobby_basic_mock.jpg "To do: Add Game Lobby Mockup Image")
+![Game Lobby](/docs/LobbyMockup.png "Lobby Mockup Image")
 
 - Game Lobby with updating list of available games. Creating a game would notify others online so that they may choose to join the game.
 - Player enters the lobby after logging in.
