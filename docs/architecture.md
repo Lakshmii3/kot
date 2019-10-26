@@ -42,12 +42,13 @@ The websites frontend infrastructure will leverage React and [Flux](https://gith
 The UI team has not yet completely decided which architectural data and state management approach to utilize. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
 
 ![Flux](https://imgur.com/c4S5Vti)
+![Flux](/flux-diagram-white-background.png.jpg?raw=true "Flux Architecture (Source: https://github.com/facebook/flux)")
 
 ### Game Landing & Login Page
-![Game Lobby Mockup](https://imgur.com/SUuF9L3)
+
+![Game Lobby Mockup](kot_gameboard basic mock.jpg)
 
 ### Game Lobby Page
-
 
 ![Game Lobby Mockup](https://imgur.com/SUuF9L3)
 
@@ -66,4 +67,4 @@ The game area will include the components highlighted on the Game Area shown bel
 - MUDCommandShell: A scrollable text area with textbox for interacting with the game via MUD style text commands. Any Player Ability, Player Control or Player resources (heart, energy, claws, etc.) can be leveraged via text command or by interacting with an associated UI control.
 - ChatShell:
 
-![Game Area Mockup](https://imgur.com/SUuF9L3)
+![Game Area Mockup](/kot_gameboard_basic_mock.jpg?raw=true "Game Area Wireframe")
