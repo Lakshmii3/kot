@@ -46,7 +46,7 @@ Channels is designed to use Redis as its preferred channel layer, though there i
 
 The websites frontend infrastructure will leverage React and [Flux](https://github.com/facebook/flux "Facebook Flux on GitHub") application architecture. Flux was developed to utilize a unidirectional data flow in React.
 
-The UI team has not yet completely decided which architectural data and state management approach to utilize. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
+The UI team has not yet completely decided which state management data flow implementation to embrace. We intend to investigating Redux and Facebooks more recent Flux implementation. Redux differs from Flux since it’s an implementation utilizes only a single store no matter the application size. Flux allow for many stores.
 
 ![Flux](https://github.com/facebook/flux/blob/master/img/flux-diagram-white-background.png "Flux Architecture")
 
