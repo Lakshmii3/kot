@@ -1,24 +1,31 @@
 # Software Architecture for King of Tokyo
+
 ## 1. Introduction
+
 The main motivation behind documenting the architecture is to ensure the team is making good design decisions guided by separation of concerns and overall high cohesion in terms of designing the game. 
 
 ## 2. System Context
-The major systems that comprise KOT are as folllows:
+
+The major systems that comprise KOT are as follows:
+
 - Django backend for routing and providing a RESTful API
 - MySQL database for storing player and game session data
 - Django channels for asynchronous Websocket communication
 - React frontend for the user interface leveraging Redux
 
-#### To do: Diagram should map out the basic systems involved with KOT and how they interact with each other. 
+#### To do: Diagram should map out the basic systems involved with KOT and how they interact with each other.
 
 ## 2.1 Backend
-### Vanilla Django 
+
+### Vanilla Django
+
  Django is built around the simple concept of requests and responses: the browser makes a request, Django calls a view, which returns a response that’s sent back to the browser.  
 
 ![Vanilla](https://i.imgur.com/1HzpGJe.png_)
 
 ### Django Channels
-Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols. It’s built on a Python specification called ASGI.(Asynchronous Server Gateway Interface)
+
+Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols. It’s built on a Python specification called ASGI (Asynchronous Server Gateway Interface).
 It does this by taking the core of Django and layering a fully asynchronous layer underneath, running Django itself in a synchronous mode but handling connections and sockets asynchronously, and giving you the choice to write in either style.
 
 Django Channels supports WebSockets which is a protocol that provides full-duplex communication — a persistent, open connection between the client and the server, with either able to send data at any time.
@@ -69,13 +76,13 @@ Component listing indicate development priority.
 
 - PlayerControls: A series of buttons for performing game mechanics such as including "Roll", "Reroll", "Leave Tokyo City" and "Enter Tokyo City".
 
-- GameConsole:  The game log showing the players interaction with the opponents and game responses to actions.
+- GameConsole:  The game log showing the players interaction with the opponent’s and game responses to actions.
 
-- PlayerDetails: Series of text areas organized in a column describing the players current game standing stats. These include Victory (VPs), Hearts and Energy Points. Counters collected shall also be shown.
+- PlayerDetails: Series of text areas organized in a column describing the player's current game standing stats. These include Victory (VPs), Hearts and Energy Points. Counters collected shall also be shown.
 
 - CardStore: A row of 3 cards (CardDetails) that can be purchased by players durring their turns. Card slots will be randomly replaced after purchase.
 
-- CardDetails: Shows cards details including name, cost, effect, footnote and card type. CardDetails appear within the CardStore representing each card available for sale.
+- CardDetails: Shows cards details including name, cost, effect and footnote and card type. CardDetails appear within the CardStore representing each card available for sale.
 
 - PlayerAbilities: A stacked series of buttons each representing a card purchased or earned by the player. Cards can be activated by clicking. Cards will be disabled or enabled when accessable given the players current turn phase.
 
@@ -105,7 +112,7 @@ Create a Python virtual environment.
 
 `py -m venv env`
 
-Activate the python virutal environment.
+Activate the python virtual environment.
 
 `.\env\Scripts\activate`
 
